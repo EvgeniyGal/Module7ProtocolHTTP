@@ -1,10 +1,7 @@
 package edu.goit.httputils;
 
-import lombok.SneakyThrows;
-
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class HttpStatusChecker {
@@ -18,7 +15,7 @@ public class HttpStatusChecker {
         if (connection.getResponseCode() == 200) {
             return connection.getURL().toString();
         } else {
-            throw new RuntimeException("Wrong code");
+            throw new IOException("Wrong code");
         }
 
     }

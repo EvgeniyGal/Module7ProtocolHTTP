@@ -1,7 +1,5 @@
 package edu.goit.httputils;
 
-import lombok.SneakyThrows;
-
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
